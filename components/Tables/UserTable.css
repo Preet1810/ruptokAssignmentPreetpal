@@ -1,0 +1,22 @@
+thead[class*="ant-table-thead"] th {
+    background-color: #f1f4f9 !important;
+}
+
+.ant-table.table-rows table {
+    background-color: #fff;
+}
+
+.ant-table-wrapper table {
+    background-color: #f1f4f9;
+    border-spacing: 0 10px;
+}
+
+.ant-table-wrapper table td:first-child {
+    border-spacing: 0 0;
+}
+
+
+.ant-table-wrapper .ant-table-tbody>tr>td {
+    border-bottom: 0px;
+    background-color: white;
+}

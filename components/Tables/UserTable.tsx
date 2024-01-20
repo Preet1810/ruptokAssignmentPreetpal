@@ -3,6 +3,8 @@
 import Table, { ColumnsType } from "antd/es/table";
 import { UserProps } from "@/lib/types";
 import { UserTableProps } from "@/lib/types";
+import { Space } from "antd";
+import "./UserTable.css"
 const UserTable = (props: UserTableProps) => {
     const { users } = props;
     const columns: ColumnsType<UserProps> = [
@@ -43,24 +45,23 @@ const UserTable = (props: UserTableProps) => {
         },
 
     ];
-    const rowClassName = (_: any, index: number) => {
-        return index % 2 === 0 ? 'even-row' : 'odd-row';
-    };
 
     return (
         <div
             className="flex flex-col flex-grow w-full h-[calc(100vh-230px)] overflow-y-auto ">
             <Table
+                // style={{ columnGap: "20px" }}
                 loading={users ? false : true}
                 bordered={false}
                 scroll={{ x: 'max-content', }}
                 columns={columns}
                 dataSource={users}
                 rowKey={"id"}
-                className='max-w-[100%]'
+                className='max-w-[100%] !bg-[#f1f4f9]'
                 pagination={false}
                 sticky={true}
-                rowClassName={rowClassName}
+                rowClassName={() => "table-rows"}
+
             />
         </div>
     )
