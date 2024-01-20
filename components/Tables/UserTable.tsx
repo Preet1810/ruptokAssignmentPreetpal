@@ -53,7 +53,7 @@ const UserTable = (props: UserTableProps) => {
                 scroll={{ x: 'max-content', }}
                 columns={columns}
                 dataSource={users}
-                rowKey={"_id"}
+                rowKey={"id"}
                 className='max-w-[100%]'
                 pagination={false}
                 sticky={true}

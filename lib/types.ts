@@ -1,5 +1,5 @@
 export interface UserProps {
-    id: string;
+    id?: string;
     firstName: string;
     email: string;
     phone: string;
@@ -8,4 +8,10 @@ export interface UserProps {
 
 export interface UserTableProps {
     users: UserProps[] | undefined;
+}
+
+
+export interface AddUserModalProps {
+    state: boolean;
+    changeopenState: React.Dispatch<React.SetStateAction<boolean>>;
 }
