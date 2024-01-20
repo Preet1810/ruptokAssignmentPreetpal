@@ -5,3 +5,4 @@ export const validationSchemaAddUser = Yup.object({
     email: Yup.string().email().required("Email is required"),
     phone: Yup.number().required("Phone Number is required"),
 });
+

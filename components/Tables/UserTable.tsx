@@ -12,15 +12,14 @@ const UserTable = (props: UserTableProps) => {
             render: (_, { id }) => (<p className="!font-normal">{id}</p>),
             className: 'text-[14px] font-[600]  text-[#1E3146] ',
             align: 'center',
-            width: "16rem"
+            width: "10rem"
         },
         {
             title: 'Name',
             dataIndex: 'firstName',
             render: (_, { firstName }) => (
                 <p
-                    className="!font-normal max-w-[25rem] overflow-hidden line-clamp-2"
-                    style={{ WebkitBoxOrient: 'vertical' }}
+                    className="!font-normal  overflow-hidden "
                 >
                     {firstName}
                 </p>
@@ -44,6 +43,10 @@ const UserTable = (props: UserTableProps) => {
         },
 
     ];
+    const rowClassName = (_: any, index: number) => {
+        return index % 2 === 0 ? 'even-row' : 'odd-row';
+    };
+
     return (
         <div
             className="flex flex-col flex-grow w-full h-[calc(100vh-230px)] overflow-y-auto ">
@@ -57,6 +60,7 @@ const UserTable = (props: UserTableProps) => {
                 className='max-w-[100%]'
                 pagination={false}
                 sticky={true}
+                rowClassName={rowClassName}
             />
         </div>
     )
