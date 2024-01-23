@@ -11,6 +11,15 @@ thead[class*="ant-table-thead"] th {
     border-spacing: 0 10px;
 }
 
+/* .ant-table-container.ant-table-body table {
+    background-color: #0a55cf;
+    border-spacing: 0 10px;
+} */
+
+.ant-table-container.ant-table-header table {
+    border-spacing: 0
+}
+
 .ant-table-wrapper table td:first-child {
     border-spacing: 0 0;
 }

@@ -1,10 +1,9 @@
-import UserTable from "@/components/Tables/UserTable";
-import { IoMdSearch } from "react-icons/io";
-import Users from "@/components/Users/Users";
-export default function Home() {
+import React from 'react'
+
+const page = () => {
   return (
-    <main className="p-5 md:p-16 bg-[#f1f4f9]">
-      <Users />
-    </main>
-  );
+    <div>page</div>
+  )
 }
+
+export default page
