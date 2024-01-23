@@ -14,13 +14,13 @@ const Sidebar = (props: SidebarProps) => {
     const { showIcon, setSidebarOpen } = props;
     return (
         <div className="h-[100%] bg-[#064333] w-full flex flex-col items-center p-5 gap-y-5">
-            {/* {showIcon && (
+            {showIcon && (
                 <div
                     onClick={() => setSidebarOpen(false)}
                     className="ml-auto">
-                    <RxCross2 className="text-[2rem]" />
+                    <RxCross2 className="text-[2rem] text-white" />
                 </div>
-            )} */}
+            )}
             <div className="flex items-center gap-x-3 h-[3rem]">
                 <ImStack className="text-white" />
                 <p className="text-md font-[400] text-white">Fund Flow 360</p>

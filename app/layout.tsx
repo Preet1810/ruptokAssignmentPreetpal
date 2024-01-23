@@ -46,8 +46,8 @@ export default function RootLayout({
               showIcon={showIcon}
             />
           </div>
-          <div className="flex flex-col w-full bg-[#f1f4f9] rounded-tl-[4rem]">
-            <div className="h-[50px] w-full">
+          <div className={`flex flex-col w-full bg-[#f1f4f9] ${isSidebarOpen ? 'rounded-tl-[2.5rem]' : ''} `}>
+            <div className="h-[60px] w-full">
               <Navbar
                 showIcon={showIcon}
                 setShowIcon={setShowIcon}
