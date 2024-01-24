@@ -48,7 +48,7 @@ const UserTable = (props: UserTableProps) => {
 
     return (
         <div
-            className="flex flex-col flex-grow w-full md:h-[calc(100vh-180px)] h-[calc(100vh-260px)] overflow-y-auto ">
+            className="flex flex-col flex-grow w-full md:h-[calc(100vh-180px)] h-[calc(100vh-260px)] overflow-y-auto scrollbar-thin">
             <Table
                 loading={users ? false : true}
                 bordered={false}
