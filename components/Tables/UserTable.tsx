@@ -48,7 +48,7 @@ const UserTable = (props: UserTableProps) => {
 
     return (
         <div
-            className="flex flex-col flex-grow w-full h-[calc(100vh-230px)] overflow-y-auto ">
+            className="flex flex-col flex-grow w-full md:h-[calc(100vh-180px)] h-[calc(100vh-260px)] overflow-y-auto ">
             <Table
                 // style={{ columnGap: "20px" }}
                 loading={users ? false : true}
@@ -57,7 +57,7 @@ const UserTable = (props: UserTableProps) => {
                 columns={columns}
                 dataSource={users}
                 rowKey={"id"}
-                className='max-w-[100%] !bg-[#f1f4f9]'
+                className=' !bg-[#f1f4f9]'
                 pagination={false}
                 sticky={true}
                 rowClassName={() => "table-rows"}

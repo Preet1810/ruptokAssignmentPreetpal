@@ -39,15 +39,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className='min-h-[100vh] w-[100%] flex bg-[#064333]'>
-          <div className={`min-w-[248px] h-[100vh] md:relative absolute transition-all duration-300 ${isSidebarOpen ? 'left-0' : 'left-[-248px]'}`}>
+        <main className='flex bg-[#064333] w-full h-[100vh]'>
+          <div className={`min-w-[248px] z-10 min-h-full bg-[#064333] md:relative absolute transition-all duration-300 ${isSidebarOpen ? 'left-0' : 'left-[-248px]'}`}>
             <Sidebar
               setSidebarOpen={setSidebarOpen}
               showIcon={showIcon}
             />
           </div>
-          <div className={`flex flex-col w-full bg-[#f1f4f9] ${isSidebarOpen ? 'rounded-tl-[2.5rem]' : ''} `}>
-            <div className="h-[60px] w-full">
+          <div className={`flex flex-col h-full  md:w-[calc(100%-248px)] w-full bg-[#f1f4f9] ${isSidebarOpen ? 'rounded-tl-[2.5rem]' : ''} `}>
+            <div className="min-h-[60px]">
               <Navbar
                 showIcon={showIcon}
                 setShowIcon={setShowIcon}
@@ -55,7 +55,7 @@ export default function RootLayout({
                 setSidebarOpen={setSidebarOpen}
               />
             </div>
-            <div>
+            <div className="p-5  z-0">
               {children}
             </div>
           </div>

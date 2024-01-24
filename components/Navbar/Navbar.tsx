@@ -8,7 +8,7 @@ import Image from "next/image";
 const Navbar = (props: NavbarProps) => {
     const { setSidebarOpen, showIcon } = props;
     return (
-        <div className='w-full h-full flex items-center justify-between sm:px-8 px-3 border-b-2'>
+        <div className='h-full flex items-center justify-between sm:px-8 px-3 border-b-2'>
 
             <div className="flex items-center gap-x-6">
                 {showIcon && (

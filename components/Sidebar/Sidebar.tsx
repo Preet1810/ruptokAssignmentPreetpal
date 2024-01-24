@@ -13,7 +13,7 @@ import { useState } from "react";
 const Sidebar = (props: SidebarProps) => {
     const { showIcon, setSidebarOpen } = props;
     return (
-        <div className="h-[100%] bg-[#064333] w-full flex flex-col items-center p-5 gap-y-5">
+        <div className="w-full flex flex-col items-center p-5 gap-y-5">
             {showIcon && (
                 <div
                     onClick={() => setSidebarOpen(false)}
