@@ -50,7 +50,6 @@ const UserTable = (props: UserTableProps) => {
         <div
             className="flex flex-col flex-grow w-full md:h-[calc(100vh-180px)] h-[calc(100vh-260px)] overflow-y-auto ">
             <Table
-                // style={{ columnGap: "20px" }}
                 loading={users ? false : true}
                 bordered={false}
                 scroll={{ x: 'max-content', }}
@@ -60,8 +59,7 @@ const UserTable = (props: UserTableProps) => {
                 className=' !bg-[#f1f4f9]'
                 pagination={false}
                 sticky={true}
-                rowClassName={() => "table-rows"}
-
+                rowClassName={() => "CustomersClass"}
             />
         </div>
     )

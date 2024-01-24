@@ -36,7 +36,7 @@ const Users = () => {
             <div className="flex flex-col gap-y-4">
                 <div className="flex md:flex-row flex-col md:gap-y-0 gap-y-3 justify-between md:items-center  ">
                     <div className="flex sm:flex-row sm:items-center flex-col sm:gap-y-0 gap-y-3  gap-x-10">
-                        <p className="text-[20px] font-[600]">Customers List</p>
+                        <p className="text-[14px] font-[600]">Customers List</p>
                         <div className="flex items-center min-[933px]:w-[300px] w-full h-[38px] rounded-md border-2 border-grey px-3 mr-3">
                             <input
                                 type="text"

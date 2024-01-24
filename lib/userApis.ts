@@ -1,5 +1,6 @@
 import axios from "axios";
 import { UserProps } from "./types";
+
 export async function getUsers(search?: string) {
     try {
         const apiurl = `https://dummyjson.com/users` + (search ? `/search?q=${search}` : "")

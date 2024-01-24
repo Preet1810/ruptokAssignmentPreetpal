@@ -23,7 +23,7 @@ const Sidebar = (props: SidebarProps) => {
             )}
             <div className="flex items-center gap-x-3 h-[3rem]">
                 <ImStack className="text-white" />
-                <p className="text-md font-[400] text-white">Fund Flow 360</p>
+                <p className="text-md font-[400] text-white">FUND FLOW 360</p>
             </div>
             <div className="h-[1px] bg-white w-full opacity-15">
             </div>
