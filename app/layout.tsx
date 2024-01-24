@@ -41,14 +41,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className='flex bg-[#064333] w-full h-[100vh]'>
-          <div className={`min-w-[248px] z-20 min-h-full bg-[#064333] md:relative absolute transition-all duration-300 ${isSidebarOpen ? 'left-0' : 'left-[-248px]'}`}>
+        <main className='flex bg-[#064333] h-[100vh]'>
+          <div className={`min-w-[248px] z-20 h-full  bg-[#064333] md:relative absolute transition-all duration-300 ${isSidebarOpen ? 'left-0' : 'left-[-248px]'}`}>
             <Sidebar
               setSidebarOpen={setSidebarOpen}
               showIcon={showIcon}
             />
           </div>
-          <div className={`flex flex-col h-full  md:w-[calc(100%-248px)] w-full bg-[#f1f4f9] ${isSidebarOpen ? 'rounded-tl-[2.5rem]' : ''} `}>
+          <div className={`flex flex-col  md:w-[calc(100%-248px)] w-full bg-[#f1f4f9] ${isSidebarOpen ? 'rounded-tl-[2.5rem]' : ''} `}>
             <div className="min-h-[60px]">
               <Navbar
                 showIcon={showIcon}
@@ -61,7 +61,7 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-          <div className="absolute z-10 bottom-[3rem] right-[3rem] flex sm:flex-row flex-col gap-y-2 sm:items-center items-start gap-x-5">
+          <div className="absolute  z-10 bottom-[3rem] right-[3rem] sm:flex hidden flex-col gap-y-2 items-start gap-x-5">
             <ColorScheme
               colors={["#084d3b", "#1f40ac", "#1e3a8d", "#194d63", "#302f7f"]}
             />
