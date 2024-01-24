@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const [isSidebarOpen, setSidebarOpen] = useState<boolean>(true);
+  const [isSidebarOpen, setSidebarOpen] = useState<boolean>(false);
   const [showIcon, setShowIcon] = useState<boolean>(false);
   useEffect(() => {
     const handleResize = () => {
@@ -25,7 +25,7 @@ export default function RootLayout({
         setShowIcon(false)
         setSidebarOpen(true)
       } else {
-        setSidebarOpen(true)
+        setSidebarOpen(false)
         setShowIcon(true);
       }
     };
@@ -39,6 +39,10 @@ export default function RootLayout({
   useEffect(() => {
     console.log(isSidebarOpen);
   }, [isSidebarOpen])
+
+  useEffect(() => {
+    console.log("rendered")
+  }, [])
   return (
     <html lang="en">
       <body className={inter.className}>
