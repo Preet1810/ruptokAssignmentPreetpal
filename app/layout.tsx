@@ -23,6 +23,7 @@ export default function RootLayout({
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setShowIcon(false)
+        setSidebarOpen(true)
       } else {
         setSidebarOpen(true)
         setShowIcon(true);
