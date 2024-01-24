@@ -61,7 +61,7 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-          <div className="absolute  z-10 bottom-[3rem] right-[3rem] sm:flex hidden flex-col gap-y-2 items-start gap-x-5">
+          <div className="absolute  z-10 bottom-[3rem] right-[3rem] sm:flex hidden gap-y-2 items-start gap-x-5">
             <ColorScheme
               colors={["#084d3b", "#1f40ac", "#1e3a8d", "#194d63", "#302f7f"]}
             />
