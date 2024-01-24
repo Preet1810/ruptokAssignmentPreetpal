@@ -27,3 +27,7 @@ export interface NavbarProps {
     showIcon: boolean;
     setShowIcon: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+export interface ColorSchemeProps {
+    colors: string[];
+}

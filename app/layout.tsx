@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import ColorScheme from "@/components/ColorScheme";
 import { useState, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -58,6 +59,12 @@ export default function RootLayout({
             <div className="p-5  z-0">
               {children}
             </div>
+          </div>
+          <div className="absolute z-50 bottom-[3rem] right-[15rem] flex items-center gap-x-5">
+            <ColorScheme
+              colors={["#084d3b", "#1f40ac", "#1e3a8d", "#194d63", "#302f7f"]}
+            />
+            <div>yooo</div>
           </div>
         </main>
       </body>
