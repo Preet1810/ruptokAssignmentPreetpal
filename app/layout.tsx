@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import ColorScheme from "@/components/ColorScheme";
+import DarkModeSwitch from "@/components/DarkModeSwitch";
 import { useState, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -41,7 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className='flex bg-[#064333] w-full h-[100vh]'>
-          <div className={`min-w-[248px] z-10 min-h-full bg-[#064333] md:relative absolute transition-all duration-300 ${isSidebarOpen ? 'left-0' : 'left-[-248px]'}`}>
+          <div className={`min-w-[248px] z-20 min-h-full bg-[#064333] md:relative absolute transition-all duration-300 ${isSidebarOpen ? 'left-0' : 'left-[-248px]'}`}>
             <Sidebar
               setSidebarOpen={setSidebarOpen}
               showIcon={showIcon}
@@ -60,11 +61,11 @@ export default function RootLayout({
               {children}
             </div>
           </div>
-          <div className="absolute z-50 bottom-[3rem] right-[15rem] flex items-center gap-x-5">
+          <div className="absolute z-10 bottom-[3rem] right-[3rem] flex sm:flex-row flex-col gap-y-2 sm:items-center items-start gap-x-5">
             <ColorScheme
               colors={["#084d3b", "#1f40ac", "#1e3a8d", "#194d63", "#302f7f"]}
             />
-            <div>yooo</div>
+            <DarkModeSwitch />
           </div>
         </main>
       </body>

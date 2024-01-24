@@ -2,8 +2,8 @@ import { ColorSchemeProps } from "@/lib/types"
 const ColorScheme = (props: ColorSchemeProps) => {
 
     return (
-        <div className="w-[245px] h-[40px] rounded-2xl p-2 shadow-md bg-white flex items-center justify-between">
-            <p className="text-slate-500 text-[11px] font-semibold">Color Scheme</p>
+        <div className="w-full h-[40px] rounded-3xl p-2 shadow-md bg-white flex items-center justify-between gap-x-5">
+            <p className="text-slate-500 text-[11px] font-semibold text-nowrap">Color Scheme</p>
             <div className="flex items-center gap-x-1">
                 {props.colors.map((color, index) => (
                     <div
